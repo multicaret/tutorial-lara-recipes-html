@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,200;0,400;0,700;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!-- End of Google Fonts -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="mc-header" id="mc-header">
+    <div class="mc-header-wrapper">
+        <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="mc-site-header">
+            <a href="index.html" class="mb-3 mx-auto site-logo">
+                <img src="img/logo.png" alt="Logo" width="70px">
+            </a>
+            <h1 class="text-center site-title">Lara<span class="fw-light">Recipes</span></h1>
+        </div>
+        <nav class="mc-nav" id="mc-nav">
+            <ul>
+                <li class="mc-nav-item"><a href="index.html" class="mc-nav-link">
+                    <i class="fas fa-carrot"></i>
+                    Home
+                </a></li>
+                <li class="mc-nav-item"><a href="categories.html" class="mc-nav-link">
+                    <i class="fas fa-cubes-stacked"></i>
+                    Categories
+                </a></li>
+                <li class="mc-nav-item active"><a href="single-category.html" class="mc-nav-link">
+                    <i class="fas fa-cubes-stacked"></i>
+                    Single Category
+                </a></li>
+                <li class="mc-nav-item"><a href="single-recipe.html" class="mc-nav-link">
+                    <i class="fas fa-bowl-food"></i>
+                    Single Recipe
+                </a></li>
+                <li class="mc-nav-item"><a href="about.html" class="mc-nav-link">
+                    <i class="fas fa-lemon"></i>
+                    About Us
+                </a></li>
+                <li class="mc-nav-item"><a href="contact.html" class="mc-nav-link">
+                    <i class="fas fa-utensils"></i>
+                    Contact Us
+                </a></li>
+            </ul>
+        </nav>
+        <div class="mc-mb-65">
+            <a href="https://x.com/mkwsra" class="mc-social-link">
+                <i class="fab fa-x-twitter mc-social-icon"></i>
+            </a>
+            <a href="https://linkedin.com/in/mkwsra" class="mc-social-link">
+                <i class="fab fa-linkedin-in mc-social-icon"></i>
+            </a>
+            <a rel="nofollow" href="https://fb.com/mkwsra" class="mc-social-link">
+                <i class="fab fa-facebook-f mc-social-icon"></i>
+            </a>
+            <a href="https://instagram.com/multicaret" class="mc-social-link">
+                <i class="fab fa-instagram mc-social-icon"></i>
+            </a>
+        </div>
+        <p class="pr-5 text-white">
+            Lara Recipes a demo of a Laravel tutorial created by
+            <a href="https://mkwsra.com" class="text-dark">Mo Kawsara</a>
+            using the Xtra Blog html5 theme as a
+            foundation, this theme got tweaked for the purposes of this tutorial.
+        </p>
+        <p class="mc-mb-80 text-white">If you liked this tutorial, consider helping me out by sharing this video series
+            with others and perhaps by
+            liking my <a href="https://www.youtube.com/@multi-caret" target="_blank" class="text-dark">YouTube
+                videos</a></p>
+    </div>
+</header>
+<div class="container-fluid">
+    <main class="mc-main">
+
+        <!--<div class="container mb-5">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Salad Meals</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa cumque
+                        deleniti eveniet in provident sapiente! Enim facilis harum laudantium maiores, officiis pariatur
+                        quae, quidem sapiente, tempora temporibus ullam unde?</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                        <button type="button" class="btn btn-outline-secondary px-4">Browse All</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                    <img class="rounded-lg-3" src="img/3.jpeg" alt="" width="720">
+                </div>
+            </div>
+        </div>-->
+
+        <!-- Search form -->
+        <div class="row">
+            <div class="col-12">
+                <form method="GET" class="form-inline mc-mb-80 mc-search-form">
+                    <input class="form-control mc-search-input" name="query" type="text" placeholder="Search..."
+                           aria-label="Search">
+                    <button class="mc-search-button" type="submit">
+                        <i class="fas fa-search mc-search-icon" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <h2 class="pb-2 mb-4 border-bottom d-flex justify-content-between">
+            Salad Meals
+        </h2>
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            <article class="col-6">
+                <a href="single-recipe.html" class="effect-lily mc-post-link">
+                    <div class="mc-post-link-inner mb-3">
+                        <img src="img/1.jpeg" alt="Image" class="img-fluid">
+                    </div>
+                    <span class="position-absolute mc-new-badge">
+                        <i class="fas fa-certificate"></i>
+                        Featured
+                    </span>
+                </a>
+                <div class="recipe-features">
+                    <span class="badge text-bg-success">
+                        <i class="fas fa-carrot me-1"></i>
+                        Vegetarian
+                    </span>
+                    <span class="badge text-bg-danger">
+                            <i class="fas fa-pepper-hot me-1"></i>
+                            Spicy
+                    </span>
+                    <span class="badge text-bg-warning">
+                            <i class="fas fa-drumstick-bite me-1"></i>
+                            High Protein
+                    </span>
+                    <span class="badge text-bg-success">
+                            <i class="fas fa-apple-whole me-1"></i>
+                            Vegan
+                    </span>
+                    <span class="badge text-bg-dark">
+                            <i class="fas fa-fire me-1"></i>
+                            Low Carbs
+                    </span>
+                    <span class="badge text-bg-info">
+                            <i class="fas fa-fish me-1"></i>
+                            Pescatarian
+                    </span>
+                </div>
+                <a href="single-recipe.html">
+                    <h2 class="mc-pt-20 mc-post-title">Peanut Butter and Jelly</h2>
+                </a>
+                <p class="mc-pt-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores aut blanditiis cum hic
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aspernatur eius excepturi
+                    illum, labore mollitia natus neque, nobis, omnis quisquam quo rerum veniam? Animi at cum enim error
+                    esse.
+                </p>
+                <hr class="pb-3">
+                <!--<div class="d-flex justify-content-between">
+                    <span>June 24, 2023</span>
+                    <span>by Chef Mo</span>
+                </div>-->
+            </article>
+            <article class="col-6">
+                <a href="single-recipe.html" class="effect-lily mc-post-link">
+                    <div class="mc-post-link-inner mb-3">
+                        <img src="img/2.jpeg" alt="Image" class="img-fluid">
+                    </div>
+                    <h2 class="mc-pt-30 mc-post-title">Buffalo Wings</h2>
+                </a>
+                <p class="mc-pt-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores aut blanditiis cum hic
+                </p>
+                <hr class="pb-3">
+                <!--<div class="d-flex justify-content-between">
+                    <span>48 comments</span>
+                    <span>by Chef Mo</span>
+                </div>-->
+            </article>
+            <article class="col-6">
+                <a href="single-recipe.html" class="effect-lily mc-post-link mc-pt-20">
+                    <div class="mc-post-link-inner mb-3">
+                        <img src="img/3.jpeg" alt="Image" class="img-fluid">
+                    </div>
+                    <h2 class="mc-pt-30 mc-post-title">Chocolate Chip Cookies</h2>
+                </a>
+                <p class="mc-pt-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores aut blanditiis cum hic
+                </p>
+                <hr class="pb-3">
+                <!--<div class="d-flex justify-content-between">
+                    <span>24 comments</span>
+                    <span>by Chef Mo</span>
+                </div>-->
+            </article>
+            <article class="col-6">
+                <a href="single-recipe.html" class="effect-lily mc-post-link mc-pt-20">
+                    <div class="mc-post-link-inner mb-3">
+                        <img src="img/5.jpeg" alt="Image" class="img-fluid">
+                    </div>
+                    <h2 class="mc-pt-30 mc-post-title">Macaroni & cheese</h2>
+                </a>
+                <p class="mc-pt-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequatur, deserunt expedita
+                    ipsum mollitia neque, omnis optio placeat quae quos, recusandae veritatis vero. Amet et eum ipsam
+                    pariatur quasi. Esse.
+                </p>
+                <hr class="pb-3">
+                <!--<div class="d-flex justify-content-between">
+                    <span>72 comments</span>
+                    <span>by Chef Mo</span>
+                </div>-->
+            </article>
+            <article class="col-6">
+                <a href="single-recipe.html" class="effect-lily mc-post-link mc-pt-20">
+                    <div class="mc-post-link-inner mb-3">
+                        <img src="img/6.jpeg" alt="Image" class="img-fluid">
+                    </div>
+                    <h2 class="mc-pt-30 mc-post-title">Chicken Shawarma (Middle Eastern)</h2>
+                </a>
+                <p class="mc-pt-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, eligendi incidunt molestiae porro
+                    quaerat quam quas recusandae. Animi blanditiis hic illum ipsum non quasi quis repellendus. Earum ex
+                    officia quasi.
+                </p>
+                <hr class="pb-3">
+                <!--<div class="d-flex justify-content-between">
+                    <span>84 comments</span>
+                    <span>by Chef Mo</span>
+                </div>-->
+            </article>
+            <article class="col-6">
+                <a href="single-recipe.html" class="effect-lily mc-post-link mc-pt-20">
+                    <div class="mc-post-link-inner mb-3">
+                        <img src="img/4.jpeg" alt="Image" class="img-fluid">
+                    </div>
+                    <h2 class="mc-pt-30 mc-post-title">Delicious Falafel Recipe (Fried or Baked)</h2>
+                </a>
+                <p class="mc-pt-10">
+                    Quisque id ipsum vel sem maximus vulputate sed quis velit. Nunc vel turpis eget orci elementum
+                    cursus vitae in eros. Quisque vulputate nulla ut dolor consectetur luctus.
+                </p>
+                <hr class="pb-3">
+                <!--<div class="d-flex justify-content-between">
+                    <span>96 comments</span>
+                    <span>by Chef Mo</span>
+                </div>-->
+            </article>
+
+            <h4 class="text-center my-5">
+                <img src="img/logo-whoops.svg" width="150" alt="No Data">
+                <i class="text-muted">
+                    no data!
+                </i>
+            </h4>
+        </div>
+        <div class="row mc-mb-40">
+            <div class="col-12 text-center d-flex justify-content-around">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </main>
+    <footer class="mc-main pt-5 mt-5 border-top">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+            <div class="col">
+                <a href="#!"
+                   class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none site-logo">
+                    <div class="mc-site-header">
+                        <img src="img/logo.png" alt="Logo" width="70px">
+                        <h3 class="text-center site-title">
+                            Lara<span class="fw-light">Recipes</span>
+                        </h3>
+                    </div>
+                </a>
+                <p class="text-body-secondary">
+                    Laravel Tutorial by <a href="https://x.com/mkwsra" target="_blank">
+                    Mo Kawsara
+                </a>
+                </p>
+            </div>
+
+            <div class="col mb-3">
+
+            </div>
+
+            <div class="col mb-3">
+                <h5>Categories</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Category 1 <small>(12 recipes)</small>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Category 2 <small>(7 recipes)</small>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Category 3 <small>(6 recipes)</small>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Category 4 <small>(6 recipes)</small>
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Category 5 <small>(4 recipes)</small>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Featured Recipes</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Recipe title 1
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Recipe title 2
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Recipe title 3
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Recipe title 4
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-body-secondary">
+                            Recipe title 5
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col mb-3">
+                <h5>Useful Links</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Search
+                        Categories</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Search
+                        Recipes</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Most Viewed
+                        Recipe</a></li>
+                    <li class="nav-item mb-2"><a href="faq.html" class="nav-link p-0 text-body-secondary">FAQs</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav justify-content-center border-bottom border-top mt-2">
+            <li class="nav-item"><a href="terms.html" class="nav-link px-2 text-body-secondary">Terms &
+                Conditions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Privacy Policy</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Photo Usage Policy</a></li>
+        </ul>
+        <div class="row">
+            <div class="col-md-6 col-12 mc-color-gray">
+                Developed with 🤩️ by <a rel="nofollow" target="_parent" href="#!" class="mc-external-link">Put Your
+                Name
+                Here Dear Laravel Developer</a>
+            </div>
+            <div class="col-md-6 col-12 mc-copyright">
+                <p class="text-body-secondary">© 2023 Multicaret, Inc</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipes HTML</title>
-    <link rel="shortcut icon" href="/img/logo.png">
+    <title>Categories</title>
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
           rel="stylesheet">
     <!-- End of Google Fonts -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
     <link href="css/style.css" rel="stylesheet">
 
 </head>
@@ -31,11 +31,11 @@
         </div>
         <nav class="mc-nav" id="mc-nav">
             <ul>
-                <li class="mc-nav-item active"><a href="index.html" class="mc-nav-link">
+                <li class="mc-nav-item"><a href="index.html" class="mc-nav-link">
                     <i class="fas fa-carrot"></i>
                     Home
                 </a></li>
-                <li class="mc-nav-item"><a href="categories.html" class="mc-nav-link">
+                <li class="mc-nav-item active"><a href="categories.html" class="mc-nav-link">
                     <i class="fas fa-cubes-stacked"></i>
                     Categories
                 </a></li>
@@ -83,68 +83,37 @@
                 videos</a></p>
     </div>
 </header>
-<div class="mc-main-full">
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"
-                    aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
-                    aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-            ></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img class="w-100" src="img/3.jpeg" alt="">
-                <div class="container carousel-item-content img-overlay">
-                    <div class="carousel-caption text-start">
-                        <h1>Chocolate Chip Cookies</h1>
-                        <p>Some representative placeholder content for the first slide of the
-                            carousel.</p>
-                        <a class="btn btn-outline-light px-4" href="#">Get Cooking</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item active">
-                <img class="w-100" src="img/4.jpeg" alt="">
-                <div class="container carousel-item-content img-overlay">
-                    <div class="carousel-caption">
-                        <h1>Delicious Falafel Recipe (Fried or Baked)</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <a class="btn btn-outline-light px-4" href="#">Get Cooking</a>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="w-100" src="img/1.jpeg" alt="">
-                <div class="container carousel-item-content img-overlay">
-                    <div class="carousel-caption text-end">
-                        <h1>Peanut Butter and Jelly</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <a class="btn btn-outline-light px-4" href="#">Get Cooking</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
-
 <div class="container-fluid">
     <main class="mc-main">
+
+        <div class="px-4 mb-5 text-center border-bottom">
+            <h1 class="display-5 fw-bold text-body-emphasis">
+                <i class="fas fa-certificate text-warning"></i>
+                Top Notch Recipes
+                <i class="fas fa-certificate text-warning"></i>
+            </h1>
+            <div class="col-lg-10 mx-auto">
+                <p class="lead mb-4">Take the opportunity to explore the curated selection that our highly skilled and
+                    experienced team has thoughtfully gathered specifically with you in mind. We've meticulously chosen
+                    these offerings to cater to your needs and preferences, ensuring that what you encounter is
+                    handpicked and tailored to suit your interests.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button type="button" class="btn btn-warning btn-lg px-4">Browse Featured Recipes</button>
+                </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 30vh;">
+                <div class="container px-5">
+                    <img src="img/1.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4"
+                         alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
 
         <!-- Search form -->
         <div class="row">
             <div class="col-12">
-                <form method="GET" class="form-inline mc-mb-20 mc-search-form">
-                    <input class="form-control mc-search-input w-100" name="query" type="text" placeholder="Search..."
+                <form method="GET" class="form-inline mc-mb-80 mc-search-form">
+                    <input class="form-control mc-search-input" name="query" type="text" placeholder="Search..."
                            aria-label="Search">
                     <button class="mc-search-button" type="submit">
                         <i class="fas fa-search mc-search-icon" aria-hidden="true"></i>
@@ -153,155 +122,84 @@
             </div>
         </div>
 
+        <div class="container px-4 pb-5">
+            <h2 class="pb-2">Collections</h2>
 
-        <div class="container px-4 py-5">
-            <h2 class="pb-2 mb-2 border-bottom d-flex justify-content-between">
-                LATEST RECIPES
-            </h2>
-            <div class="row">
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link">
-                        <div class="mc-post-link-inner">
-                            <img src="img/5.jpeg" alt="Image" class="img-fluid">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">21 Recipes</strong>
+                            <a href="#">
+                                <h3 class="mb-0">Quick & Easy</h3>
+                            </a>
                         </div>
-                        <h2 class="mc-pt-30 mc-post-title">Macaroni & cheese</h2>
-                    </a>
-                    <div class="d-flex justify-content-between">
-                        <span class="mc-color-primary">Side Dish</span>
-                    </div>
-                </article>
-
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link">
-                        <div class="mc-post-link-inner">
-                            <img src="img/3.jpeg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="mc-pt-30 mc-post-title">Chocolate Chip Cookies</h2>
-                    </a>
-                    <div class="d-flex justify-content-between">
-                        <span class="mc-color-primary">Must Have</span>
-                    </div>
-                </article>
-
-
-            </div>
-        </div>
-
-        <div class="container px-4 py-5">
-            <h2 class="pb-2 mb-2 border-bottom d-flex justify-content-between">
-                Quick & Easy
-                <a href="#!" class="btn btn-outline-dark">Browse All</a>
-            </h2>
-            <div class="row">
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link">
-                        <div class="mc-post-link-inner">
-                            <img src="img/1.jpeg" alt="Peanut Butter and Jelly" class="img-fluid">
-                        </div>
-                        <span class="position-absolute mc-new-badge">
-                        <i class="fas fa-certificate"></i>
-                        Featured
-                    </span>
-                    </a>
-                    <a href="single-recipe.html">
-                        <h2 class="mc-pt-20 mc-post-title">Peanut Butter and Jelly</h2>
-                    </a>
-                </article>
-
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link">
-                        <div class="mc-post-link-inner">
-                            <img src="img/2.jpeg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="mc-pt-30 mc-post-title">Buffalo Wings</h2>
-                    </a>
-                </article>
-
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link">
-                        <div class="mc-post-link-inner">
-                            <img src="img/3.jpeg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="mc-pt-30 mc-post-title">Chocolate Chip Cookies</h2>
-                    </a>
-                </article>
-
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link">
-                        <div class="mc-post-link-inner">
-                            <img src="img/5.jpeg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="mc-pt-30 mc-post-title">Macaroni & cheese</h2>
-                    </a>
-                </article>
-
-            </div>
-        </div>
-
-        <div class="container px-4 py-5">
-            <h2 class="pb-2 mb-2 border-bottom d-flex justify-content-between">
-                Middle Eastern
-                <a href="#!" class="btn btn-outline-dark">Browse All</a>
-            </h2>
-            <div class="row">
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link mc-pt-20">
-                        <div class="mc-post-link-inner">
-                            <img src="img/6.jpeg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="mc-pt-30 mc-post-title">Chicken Shawarma (Middle Eastern)</h2>
-                    </a>
-                </article>
-
-                <article class="col-12 col-md-6 col-lg-3">
-                    <a href="single-recipe.html" class="effect-lily mc-post-link mc-pt-20">
-                        <div class="mc-post-link-inner">
-                            <img src="img/4.jpeg" alt="Image" class="img-fluid">
-                        </div>
-                        <h2 class="mc-pt-30 mc-post-title">Delicious Falafel Recipe (Fried or Baked)</h2>
-                    </a>
-                </article>
-
-            </div>
-
-            <div class="row mt-5">
-                <a href="#!" class="btn w-100 btn-outline-dark btn-xs px-4">View All Categories</a>
-            </div>
-        </div>
-
-
-        <div class="container my-5">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                <div class="col-lg-6 p-3 p-lg-5 pt-lg-3">
-                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">DID YOU MAKE THIS RECIPE?</h1>
-                    <p class="lead">I love hearing how you went with my recipes! Tag me on Instagram at
-                        <a href="https://instagram.com/multicaret" target="_blank">@multicaret</a>.
-                    </p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-                        <a href="https://instagram.com/multicaret" target="_blank"
-                           class="btn btn-outline-secondary px-4">
-                            <i class="fab fa-instagram"></i>
-                            Instagram
-                        </a>
                     </div>
                 </div>
-                <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                    <img class="rounded-lg-3" src="img/instagram-cta.avif" alt="" width="520">
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">34 Recipes</strong>
+                            <a href="#">
+                                <h3 class="mb-0">Sunday Supper</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">25 Recipes</strong>
+                            <a href="#">
+                                <h3 class="mb-0">Salad Meals</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary-emphasis">9 Recipes</strong>
+                            <a href="#">
+                                <h3 class="mb-0">Cupcakes & Muffins</h3>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
 
 
-        <!--<footer class="row">
-            <hr class="col-12">
-            <div class="col-md-6 col-12 mc-color-gray">
-                Developed with 🤩️ by <a rel="nofollow" target="_parent" href="#!" class="mc-external-link">Your Name
-                Here Dear Laravel Developer</a>
+        <h4 class="text-center my-5">
+            <img src="img/logo-whoops.svg" width="150" alt="No Data">
+            <i class="text-muted">
+                no data!
+            </i>
+        </h4>
+
+        <div class="row mc-mb-40">
+            <div class="col-12 text-center d-flex justify-content-around">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-md-6 col-12 mc-color-gray mc-copyright">
-                Copyleft 2023 Lara Recipes Ltd.
-            </div>
-        </footer>-->
+        </div>
+
     </main>
     <footer class="mc-main pt-5 mt-5 border-top">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
